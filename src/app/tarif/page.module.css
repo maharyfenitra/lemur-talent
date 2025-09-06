@@ -1,0 +1,93 @@
+/* ===========================
+   Hero
+=========================== */
+.hero {
+  background: linear-gradient(135deg,  var(--primary-color),  var(--secondary-color));
+  color:  var(--primary-light);
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* ===========================
+   Services Section
+=========================== */
+.servicesSection {
+  padding: 4rem 2rem;
+  background:  var(--primary-light);
+  text-align: center;
+}
+
+.servicesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background:  var(--primary-light);
+  border-radius: 12px;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+  color:  var(--primary-color);
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.card .description {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.card .price {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color:  var(--secondary-color);
+}
+
+.card ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+  text-align: left;
+}
+
+.card ul li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .servicesContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}

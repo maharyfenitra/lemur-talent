@@ -1,0 +1,110 @@
+/* ===========================
+   Hero
+=========================== */
+.hero {
+  background: linear-gradient(135deg,  var(--primary-color),  var(--secondary-color));
+  color:  var(--primary-light);
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* ===========================
+   Contact Section
+=========================== */
+.contactSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  background:  var(--primary-light);
+}
+
+.form {
+  background:  var(--primary-light);
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  animation: fadeIn 0.6s ease;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color:  var(--primary-color);
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid  var(--primary-light);
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border: 1px solid  var(--primary-color);
+  box-shadow: 0 0 8px  var(--secondary-color);
+}
+
+/* ===========================
+   Bouton
+=========================== */
+.ctaButton {
+  width: 100%;
+  padding: 1rem;
+  background:  var(--primary-color);
+  color:  var(--primary-light);
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.ctaButton:hover {
+  background:  var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+/* ===========================
+   Animation
+=========================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .form {
+    padding: 1.5rem;
+  }
+}

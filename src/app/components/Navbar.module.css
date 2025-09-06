@@ -1,0 +1,100 @@
+/* ===========================
+   Navbar
+=========================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:  var(--primary-color);
+  padding: 1rem 2rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Orbitron', sans-serif; /* Police futuriste */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* ===========================
+   Menu Desktop
+=========================== */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  transition: all 0.3s ease;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.menu li a:hover {
+  color:  var(--secondary-color);
+  transform: scale(1.1);
+}
+
+/* ===========================
+   Toggle (burger)
+=========================== */
+.toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.toggle:hover {
+  transform: rotate(90deg);
+}
+
+/* ===========================
+   Responsive Mobile
+=========================== */
+@media (max-width: 768px) {
+  .toggle {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background:  var(--primary-color);
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    width: 220px;
+
+    /* Animation fermée */
+    opacity: 0;
+    transform: translateX(100%);
+    pointer-events: none;
+    transition: all 0.4s ease;
+  }
+
+  .menu.active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+  }
+}
+
+
+.activeLink {
+  color:  var(--secondary-color);
+  font-weight: 700;
+  border-bottom: 2px solid  var(--secondary-color);
+}

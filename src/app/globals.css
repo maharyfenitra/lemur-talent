@@ -1,0 +1,21 @@
+/* Reset basique */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+  background: #f9f9f9; /* optionnel */
+}
+
+:root {
+  --primary-color: #224e9c;      /* Bleu principal */
+  --primary-light: #efeff3;      /* Bleu clair */
+  --secondary-color: #77c5fc;    /* Cyan néon */
+  --background-color: #f9f9ff;   /* Fond clair */
+  --text-color: #1a1a1a;         /* Texte principal */
+  --text-light: #555;            /* Texte secondaire */
+}

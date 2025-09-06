@@ -1,0 +1,83 @@
+/* ===========================
+   Hero
+=========================== */
+.hero {
+  background: linear-gradient(135deg,  var(--primary-color),  var(--secondary-color));
+  color:  var(--primary-light);
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* ===========================
+   Team Section
+=========================== */
+.teamSection {
+  padding: 4rem 2rem;
+  text-align: center;
+  background:  var(--primary-light);
+}
+
+.teamContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background:  var(--primary-light);
+  border-radius: 12px;
+  padding: 2rem;
+  width: 220px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid  var(--primary-color);
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color:  var(--primary-color);
+  font-family: 'Orbitron', sans-serif;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color:  var(--text-light);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .teamContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
