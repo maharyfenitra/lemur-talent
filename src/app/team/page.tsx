@@ -1,4 +1,5 @@
 
+import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Team() {
@@ -45,7 +46,7 @@ export default function Team() {
         <div className={styles.teamContainer}>
           {members.map((member, index) => (
             <div key={index} className={styles.card}>
-              <img src={member.photo} alt={member.name} />
+              <Image src={member.photo} alt={member.name} />
               <h3>{member.name}</h3>
               <p>{member.role}</p>
             </div>
