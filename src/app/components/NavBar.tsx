@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
@@ -17,7 +18,7 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>LemurTalent</div>
+      <div className={styles.logo}><Image src={"/img/icon.png"} alt={""} width={45} height={45}/></div>
 
       <button 
         className={styles.toggle} 

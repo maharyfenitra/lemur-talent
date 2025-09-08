@@ -3,28 +3,29 @@ import styles from "./page.module.css";
 
 export default function Service() {
   const services = [
-    {
-      title: "Profils Entreprise",
-      description: "Assistance en gestion, contrôle de gestion et support administratif.",
-      price: "50 à 100 € / mois",
-      features: [
-        "Assistant de gestion",
-        "Contrôleur de gestion",
-        "Support administratif",
-      ],
-    },
-    {
-      title: "Profils IT",
-      description: "Experts IT qualifiés pour vos projets d'externalisation.",
-      price: "100 à 200 € / mois selon expérience",
-      features: [
-        "Développement web & mobile",
-        "Maintenance IT",
-        "Data & Intelligence Artificielle",
-      ],
-    },
-  ];
-
+  {
+    title: "Profils Entreprise",
+    description: "Accompagnement complet en gestion, contrôle de gestion et support administratif pour vos projets.",
+    price: "50 à 100 € / jour",
+    features: [
+      "Assistant de gestion",
+      "Contrôle de gestion",
+      "Support administratif",
+      "Expert-comptable",
+    ],
+  },
+  {
+    title: "Profils IT",
+    description: "Experts IT qualifiés pour vos projets d'externalisation et votre transformation digitale.",
+    price: "100 à 200 € / jour selon expérience",
+    features: [
+      "Développement web et mobile",
+      "Maintenance IT",
+      "Data et Intelligence Artificielle",
+      "Product Owner",
+    ],
+  },
+];
   return (
     <>
       <header className={styles.hero}>
