@@ -4,11 +4,7 @@ import styles from "./page.module.css";
 
 export default function Team() {
   const members = [
-  {
-    name: "Lyrah Angel",
-    role: "CEO & Co-fondateur",
-    photo: "/img/ashley.png",
-  },
+
   {
     name: "Mahary Rafanomezana",
     role: "Business Developer & Co-fondateur",
